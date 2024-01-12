@@ -1,0 +1,13 @@
+{
+  "name": "laboratorio_caf",
+  "version": "1.0.0",
+  "description": "Função Lambda AWS com TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "npm install --production && npm run build && zip -r lambda-package.zip dist package.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
