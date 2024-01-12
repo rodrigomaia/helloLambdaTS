@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "package": "npm install --production && npm run build && zip -r lambda-package.zip dist package.json"
+    "package": "npm install && npm run build && zip -r lambda-package.zip dist package.json node_modules"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
