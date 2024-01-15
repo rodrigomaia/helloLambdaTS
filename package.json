@@ -5,9 +5,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "package": "npm install && npm run build && zip -r lambda-package.zip dist package.json node_modules"
+    "package": "npm install && npm run build && zip -r lambda-package.zip dist package.json"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
+    "@types/node": "^20.11.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1535.0"
   }
 }
